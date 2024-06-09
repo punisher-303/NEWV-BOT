@@ -860,8 +860,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                      InlineKeyboardButton('📤𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥📤', url="https://t.me/+7oxSIxY4X0c2ZGVl")
                                  ],
                                  [
-                                 InlineKeyboardButton('🧩𝐔𝐩𝐝𝐚𝐭𝐞🧩', url="https://t.me/bigmoviesworld"),
-                                 InlineKeyboardButton('☘𝐒𝐮𝐩𝐩𝐨𝐫𝐭☘', url="https://t.me/NasraniChatGroup")
+                                 InlineKeyboardButton('🧩𝐔𝐩𝐝𝐚𝐭𝐞🧩', url="https://t.me/valkyraemovies"),
+                                 InlineKeyboardButton('☘𝐒𝐮𝐩𝐩𝐨𝐫𝐭☘', url="https://t.me/valkyraemoviesearch")
                                  ]                            
                              ]
                          )
@@ -971,7 +971,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/valkyraegfx")
                  ]
                 ]
             )
@@ -1405,7 +1405,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
 
             btn = [[
-                InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/nasrani_update')
+                InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/valkyraemovies')
             ], [
                 InlineKeyboardButton("Oᴘᴇɴ Hᴇʀᴇ ↓", callback_data=f"opnsetgrp#{grp_id}"),
                 InlineKeyboardButton("Oᴘᴇɴ Iɴ PM ⇲", callback_data=f"opnsetpm#{grp_id}")
@@ -3201,8 +3201,8 @@ async def advantage_spell_chok(client, msg):
 
 #    btn.append([f"⚠️𝐂𝐥𝐨𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡⚠️", callback_data="close_data", False])        
     btn.insert(0, [
-        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/NasraniSeries"),
-        InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/bigmoviesworld")
+        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/valkyraemoviesearch"),
+        InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/valkyraemovies")
     ])
 
 #    btn.insert(5, [
