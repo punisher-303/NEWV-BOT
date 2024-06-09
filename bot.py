@@ -1,4 +1,4 @@
-import os, math, logging, datetime, pytz
+import math, logging, datetime, pytz
 import logging.config
 
 from pyrogram import Client, __version__
@@ -13,6 +13,7 @@ from Script import script
 
 from aiohttp import web
 from plugins import web_server
+import os
 from plugins.helpers.config import *
 
 logging.config.fileConfig('logging.conf')
