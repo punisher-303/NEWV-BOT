@@ -13,7 +13,7 @@ from Script import script
 
 from aiohttp import web
 from plugins import web_server
-
+from plugins.helpers.config import *
 
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
