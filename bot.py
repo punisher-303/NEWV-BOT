@@ -1,11 +1,5 @@
-import logging
+import os, math, logging, datetime, pytz
 import logging.config
-
-logging.config.fileConfig('logging.conf')
-logging.getLogger().setLevel(logging.INFO)
-logging.getLogger("pyrogram").setLevel(logging.ERROR)
-logging.getLogger("imdbpy").setLevel(logging.ERROR)
-logger = logging.getLogger(__name__)
 
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
@@ -16,13 +10,16 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script 
-from datetime import date, datetime 
-import pytz
+
 from aiohttp import web
 from plugins import web_server
 
-from plugins.helpers.config import *
-import os
+
+logging.config.fileConfig('logging.conf')
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
+logging.getLogger("imdbpy").setLevel(logging.ERROR)
+logger = logging.getLogger(__name__)
 
 class Bot(Client):
     if not os.path.isdir(DOWNLOAD_LOCATION):
@@ -57,11 +54,11 @@ class Bot(Client):
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
         logging.info(script.LOGO)
-        tz = pytz.timezone('Asia/Kolkata')
-        today = date.today()
-        now = datetime.now(tz)
-        time = now.strftime("%H:%M:%S %p")
+        curr = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+        date = curr.strftime('%d %B, %Y')
+        tame = curr.strftime('%I:%M:%S %p')
         await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+        try: await self.send_message(LOG_CHANNEL, text=script.RESTART_TXT.format(me.first_name, date, tame), disable_web_page_preview=True)
         if WEBHOOK is True:
             app = web.AppRunner(await web_server())
             await app.setup()
