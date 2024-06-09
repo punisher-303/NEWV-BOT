@@ -4,7 +4,7 @@ from pyrogram.types import MessageEntity
 import ast
 from pyrogram.types.list import List
 import json
-from plugins.helpers.config import MDISK_API
+from info import MDISK_API
 import re
 from mdisky import Mdisk
 from pyrogram.types import Message
