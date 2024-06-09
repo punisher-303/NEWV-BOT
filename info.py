@@ -55,7 +55,7 @@ PM = int(pm) if pm and id_pattern.search(pm) else None
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
-FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
+FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URI)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
