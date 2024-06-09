@@ -1,6 +1,6 @@
 import time, os
 from pyrogram import Client, filters, enums
-from plugins.helpers.config import DOWNLOAD_LOCATION, CAPTION, ADMINS
+from info import DOWNLOAD_LOCATION, CAPTION, ADMINS
 from plugins.helpers.utils import progress_message, humanbytes
 
 @Client.on_message(filters.private & filters.command("vidrename") & filters.user(ADMINS))             
