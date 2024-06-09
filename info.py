@@ -17,6 +17,11 @@ API_ID = int(environ['API_ID'])
 API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
 SOURCE_CODE = "💕SHARE AND SUPPORT💕"
+DOWNLOAD_LOCATION = "./DOWNLOADS"
+MDISK_API = os.environ.get("MDISK_API")
+MDISK_CHANNEL = list(int(i.strip()) for i in os.environ.get("MDISK_CHANNEL").split(" ")) if os.environ.get("CHANNEL_ID") else []
+FORWARD_MESSAGE = bool(os.environ.get("FORWARD_MESSAGE"))
+CHANNELS = bool(os.environ.get("CHANNELS"))
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
