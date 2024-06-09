@@ -12,8 +12,8 @@ from YoutubeTags import videotags
 BTNS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('↗️Share↗️', url='https://t.me/share/url?url=https://t.me/minnal_murali_robot'),
-            InlineKeyboardButton('🙇🏻‍♂️Owner🙇🏻‍♂️', url='https://telegram.me/kinzanoufal')
+            InlineKeyboardButton('↗️Share↗️', url='https://t.me/share/url?url=https://t.me/valkyraemoviebot'),
+            InlineKeyboardButton('🙇🏻‍♂️Owner🙇🏻‍♂️', url='https://telegram.me/valkyraegfx')
         ]
     ]
 )
@@ -29,5 +29,5 @@ async def yttags(bot, message):
     if tags=="":
          await message.reply_text("No Tags Found")
     else:
-         await message.reply_text(text=f"**These are the Tags that I Found** \n\n ` {tags} ` \n\n\n **@kinzanoufal**\n \n @Kinzanoufal",reply_markup=BTNS)
+         await message.reply_text(text=f"**These are the Tags that I Found** \n\n ` {tags} ` \n\n\n **@valkyraegfx**\n \n @valkyraemovies",reply_markup=BTNS)
   
