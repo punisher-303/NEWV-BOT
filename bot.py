@@ -20,6 +20,7 @@ from Script import script
 from aiohttp import web
 from plugins import web_server
 import os
+from info import *
 
 
 class Bot(Client):
