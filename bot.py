@@ -20,7 +20,6 @@ from datetime import date, datetime
 import pytz
 from aiohttp import web
 from plugins import web_server
-from newvbot import self
 
 from plugins.helpers.config import *
 import os
