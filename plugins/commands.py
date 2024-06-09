@@ -28,8 +28,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/nasrani_update'),
-            InlineKeyboardButton('𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/bigmoviesworld')
+            InlineKeyboardButton('𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/valkyraemoviesearch'),
+            InlineKeyboardButton('𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/valkyraemovies')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -158,7 +158,7 @@ async def start(client, message):
                                          ],
                                          [
                                              InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/+YCA-JWZDNsJkNmI1")
+                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/valkyraemoviesearch")
                                          ]                            
                                      ]
                                  )
@@ -178,7 +178,7 @@ async def start(client, message):
                                          ],
                                          [
                                              InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/+YCA-JWZDNsJkNmI1")
+                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/valkyraemoviesearch")
                                          ]                            
                                      ]
                                  )
@@ -297,7 +297,7 @@ async def start(client, message):
                                          ],
                                          [
                                              InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/+YCA-JWZDNsJkNmI1")
+                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/valkyraemoviesearch")
                                          ]                            
                                      ]
                                  )
@@ -353,7 +353,7 @@ async def start(client, message):
                                          ],
                                          [
                                              InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/+YCA-JWZDNsJkNmI1")
+                                             InlineKeyboardButton('☘𝐈𝐦𝐝𝐛☘', url="https://t.me/valkyraemoviesearch")
                                          ]                            
                                      ]
                                  )
@@ -633,7 +633,7 @@ async def settings(client, message):
         ]
 
         btn = [[
-            InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/nasrani_update')
+            InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/valkyraemoviesearch')
         ], [
             InlineKeyboardButton("Oᴘᴇɴ Hᴇʀᴇ ↓", callback_data=f"opnsetgrp#{grp_id}"),
             InlineKeyboardButton("Oᴘᴇɴ Iɴ PM ⇲", callback_data=f"opnsetpm#{grp_id}")
