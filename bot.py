@@ -1,6 +1,12 @@
 import math, logging, datetime, pytz
 import logging.config
 
+logging.config.fileConfig('logging.conf')
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
+logging.getLogger("imdbpy").setLevel(logging.ERROR)
+logger = logging.getLogger(__name__)
+
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
@@ -16,11 +22,7 @@ from plugins import web_server
 import os
 from plugins.helpers.config import *
 
-logging.config.fileConfig('logging.conf')
-logging.getLogger().setLevel(logging.INFO)
-logging.getLogger("pyrogram").setLevel(logging.ERROR)
-logging.getLogger("imdbpy").setLevel(logging.ERROR)
-logger = logging.getLogger(__name__)
+
 
 class Bot(Client):
     if not os.path.isdir(DOWNLOAD_LOCATION):
