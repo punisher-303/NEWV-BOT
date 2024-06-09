@@ -7,16 +7,14 @@ load_dotenv()
 
 API_ID = int(environ.get("API_ID", ""))
 API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
-ADMINS = int(environ.get("ADMINS", ""))          
+BOT_TOKEN = environ.get("BOT_TOKEN", "")      
 CAPTION = environ.get("CAPTION", "")
 
 # for thumbnail ( back end is MrMKN brain 😉)
 DOWNLOAD_LOCATION = "./DOWNLOADS"
 
 
-# mdisk
-ADMINS = int(environ.get("ADMINS", "")) 
+# mdisk 
 API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
