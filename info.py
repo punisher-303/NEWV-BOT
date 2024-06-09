@@ -16,6 +16,7 @@ SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ['API_ID'])
 API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
+SOURCE_CODE = "💕SHARE AND SUPPORT💕"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
