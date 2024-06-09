@@ -58,6 +58,7 @@ class Bot(Client):
         date = curr.strftime('%d %B, %Y')
         tame = curr.strftime('%I:%M:%S %p')
         try: await self.send_message(LOG_CHANNEL, text=script.RESTART_TXT.format(me.first_name, date, tame), disable_web_page_preview=True)
+        except Exception as e: logger.warning(f"Bot Isn't Able To Send Message To LOG_CHANNEL \n{e}")
         if WEBHOOK is True:
             app = web.AppRunner(await web_server())
             await app.setup()
