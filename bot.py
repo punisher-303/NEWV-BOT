@@ -1,6 +1,12 @@
 import logging
 import logging.config
-
+# Credit @LazyDeveloper.
+# Please Don't remove credit.
+# Born to make history @LazyDeveloper !
+# Thank you LazyDeveloper for helping us in this Journey
+# 🥰  Thank you for giving me credit @LazyDeveloperr  🥰
+# for any error please contact me -> telegram@LazyDeveloperr or insta @LazyDeveloperr 
+# rip paid developers 🤣 - >> No need to buy paid source code while @LazyDeveloperr is here 😍😍
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
@@ -20,6 +26,7 @@ from datetime import date, datetime
 import pytz
 from aiohttp import web
 from plugins import web_server
+from newvbot import self
 
 from plugins.helpers.config import *
 import os
@@ -42,6 +49,10 @@ class Bot(Client):
             plugins={"root": "plugins"},
             sleep_threshold=5,
         )
+
+PORT = "8000"
+self.start()
+loop = asyncio.get_event_loop()
 
     async def start(self):
         b_users, b_chats = await db.get_banned()
