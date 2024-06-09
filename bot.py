@@ -57,7 +57,6 @@ class Bot(Client):
         curr = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
         date = curr.strftime('%d %B, %Y')
         tame = curr.strftime('%I:%M:%S %p')
-        await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
         try: await self.send_message(LOG_CHANNEL, text=script.RESTART_TXT.format(me.first_name, date, tame), disable_web_page_preview=True)
         if WEBHOOK is True:
             app = web.AppRunner(await web_server())
