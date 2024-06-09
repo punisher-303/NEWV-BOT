@@ -23,7 +23,7 @@ async def left(client,message):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            "Update Channel", url='https://t.me/nasrani_update'
+                                            "Update Channel", url='https://t.me/valkyraemovies'
                                         ),
                                     ],
 				    [
