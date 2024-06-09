@@ -135,7 +135,10 @@ IMDB_DLT_TIME = int(environ.get('IMDB_DLT_TIME', 600))
 HRK_APP_NAME = environ.get('HRK_APP_NAME', 'mybots')
 HRK_API = environ.get('HRK_API', '0')
 
-
+class Config(object):
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+  #CHANNEL_USERNAME without '@'
+  CHANNEL_USERNAME = os.environ.get("CHANNEL_USERNAME", "bigmoviesworld")
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
